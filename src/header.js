@@ -10,15 +10,15 @@ export function header() {
     divTabs.setAttribute('class', 'tabs');
     
     const homepageTab = document.createElement('button');
-    homepageTab.setAttribute('class', 'tab homepage');
+    homepageTab.setAttribute('class', 'tab homepageTab');
     homepageTab.innerText = 'Homepage';
  
     const menuTab = document.createElement('button');
-    menuTab.setAttribute('class', 'tab menu');
+    menuTab.setAttribute('class', 'tab menuTab');
     menuTab.innerText = 'Menu';
  
     const contactTab = document.createElement('button');
-    contactTab.setAttribute('class', 'tab contact');
+    contactTab.setAttribute('class', 'tab contactTab');
     contactTab.innerText = 'Contact Us';
    
     divTabs.appendChild(homepageTab);
