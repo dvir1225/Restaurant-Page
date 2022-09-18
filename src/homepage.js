@@ -1,10 +1,12 @@
+import homepagePic from '../src/bar&lounge.jpg';
+
 export function homepage() {
     const homepage = document.createElement('div');
     homepage.setAttribute('class', 'homepage');
     
     const pic = document.createElement('img');
     pic.setAttribute('id', 'homepagePic');
-    pic.setAttribute('src', '../src/bar&lounge.jpg');
+    pic.setAttribute('src', homepagePic);
 
     const homepageText = document.createElement('div');
     homepageText.setAttribute('class', 'homepageText');

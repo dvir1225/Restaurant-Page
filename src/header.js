@@ -1,10 +1,11 @@
+import logoPic from './logo.jpg'
 export function header() {
     const divHeader = document.createElement('div');
     divHeader.setAttribute('class', 'header');
 
     const logo = document.createElement('img');
     logo.setAttribute('id', 'logo');
-    logo.setAttribute('src', '../src/logo.jpg');
+    logo.setAttribute('src', logoPic);
     
     const divTabs = document.createElement('div');
     divTabs.setAttribute('class', 'tabs');
