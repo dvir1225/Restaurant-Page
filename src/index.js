@@ -3,6 +3,7 @@ import {header} from './header.js';
 import {footer} from './footer.js';
 import {homepage} from './homepage.js';
 import {menu} from './menu.js';
+import {contact} from './contact.js'
 
 const mainContent = () => {
     const mainContent  = document.createElement('div');
@@ -15,6 +16,7 @@ const divs ={
     mainContent: mainContent(),
     homepage: homepage(),
     menu: menu(),
+    contact: contact(),
     footer: footer()
 }  
 const content = document.getElementById('content');
@@ -44,6 +46,7 @@ const attachEventListeners = (() => {
         };
         if (eventTarget.className.includes('contact')){
             clearContent()
+            divs.mainContent.appendChild(divs.contact)
         }
     }) 
 })();
