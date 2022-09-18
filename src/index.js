@@ -32,7 +32,6 @@ const appendChilds = (() => {
     content.appendChild(divs.footer);
 })()
 
-
 const attachEventListeners = (() => {
     document.addEventListener('click', event => {
         const eventTarget = event.target;
