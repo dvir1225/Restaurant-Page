@@ -1,5 +1,6 @@
 export function contact (){
     const contactUs = document.createElement('div');
+    contactUs.setAttribute('class', 'contact-us');
 
     const contactDetails = (function makeContactDetails(){
         const contactDetails = document.createElement('div');
@@ -7,19 +8,19 @@ export function contact (){
 
         const phone = document.createElement('span');
         phone.setAttribute('class', 'phone');
-        phone.innerText = '0525381648';
+        phone.innerHTML = '<u><b>Phone number</b></u>: &emsp;&emsp; 0525381648';
         contactDetails.appendChild(phone)
 
         const address = document.createElement('span');
         address.setAttribute('class', 'address');
-        address.innerText = 'Beverly Hills 90210';
+        address.innerHTML = '<u><b>Address</b></u>: &emsp;&emsp; Beverly Hills 90210';
         contactDetails.appendChild(address)
 
         const email = document.createElement('span');
         email.setAttribute('class', 'email');
-        email.innerText = 'MiZot@LechLishon.com';
+        email.innerHTML = `<u><b>e-mail</b></u>: &emsp;&emsp; MiZot@LechLishon.com`;
         contactDetails.appendChild(email)
-        
+
         return contactDetails
     })()
 
@@ -59,7 +60,7 @@ export function contact (){
 
         const email = document.createElement('input');
         email.setAttribute('required', true);
-        email.setAttribute('type', 'text');
+        email.setAttribute('type', 'email');
         email.setAttribute('name', 'email');
         email.setAttribute('id', 'email');
         email.setAttribute('placeholder', 'e-mail');
