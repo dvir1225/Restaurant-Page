@@ -71,10 +71,19 @@ body {
     padding: 10px 20px;
     border-radius: 15px;
     border: 1px solid black;
+    box-shadow: 3px 3px lightgray;
     background-color: #B1D7B4;
     cursor: pointer;
+    transition: 100ms;
 }
 
+.tab:hover {
+    background-color: #7FB77E;
+    transform: translateY(-10%);
+}
+.tab:active {
+    background-color: #ff9100;
+}
 .homepage {
     height: 100%;
     width: 100%;
@@ -120,6 +129,13 @@ body {
     background-color: #f4f4f4;
     box-shadow: 3px 3px 3px lightgray;
     cursor: default;
+    transition: 300ms;
+    font-size: 2rem;
+}
+
+.menu-item:hover {
+    background-color: #7FB77E;
+    font-size: 2.2rem;
 }
 
 .menu-item > * {
@@ -127,16 +143,17 @@ body {
 }
 
 .dishName {
-    font-size: 1.2rem;
+    font-size: 80%;
     font-weight: bold;
 }
 
 .dishInfo {
     font-style: italic;
+    font-size: 55%;
 }
 
 .dishCost {
-    font-size: 1.2rem;
+    font-size: 80%;
 }
 
 .contact-us {
@@ -180,6 +197,16 @@ form > textarea {
     font-size: 1.2rem;
 }
 
+form > input:focus,
+form > textarea:focus{
+    background-color: #7FB77E;
+    color: white;
+}
+
+form > *:focus::placeholder {
+    color: white;
+}
+
 #firstName {
     grid-area: firstName;
 }
@@ -198,8 +225,16 @@ form > textarea {
 #submit {
     grid-area: submit;
     background-color: #7FB77E;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 
+#submit:hover {
+    background-color: #7FB77E;
+}
+#submit:active {
+    background-color: #ff9100;
+}
 .contact-details {
     display: flex;
     flex-direction: column;
