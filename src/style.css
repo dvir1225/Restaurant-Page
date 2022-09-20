@@ -230,7 +230,7 @@ form > *:focus::placeholder {
 }
 
 #submit:hover {
-    background-color: #7FB77E;
+    background-color: #63b562;
 }
 #submit:active {
     background-color: #ff9100;
